@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Famous Publishers</title>
+
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <!-- <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    /> -->
+
+    <link rel="stylesheet" href="style.css" />
+    <style>
+      @media (max-width: 768px) {
+        .cardimg {
+          width: 100% !important;
+          min-height: 300px;
+          max-height: 400px;
+        }
+      }
+    </style>
+  </head>
+  <body style="font-family: Arial; text-align: center">
+    <header class="navbar navbar-expand-lg bg-light p-3">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <!-- Left: Logo (unchanged) -->
+        <div class="logo">
+          <span class="brand fw-bold">FAMOUS.</span>
+          <span class="tag text-muted">Publishers</span>
+        </div>
+
+        <!-- Toggle button for mobile -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Center: Search bar and Right: Links (collapsible) -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <!-- Center: Search bar -->
+            <div class="mx-auto">
+              <form class="d-flex" role="search" method="get" action="/result">
+                <input
+                  class="form-control me-2 search-input"
+                  type="search"
+                  name="query"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <button class="btn search-btn" type="submit">Search</button>
+              </form>
+            </div>
+
+            <!-- Right: Links -->
+            <nav class="d-flex align-items-center gap-3">
+              <a href="#" class="text-decoration-none text-dark">About</a>
+              <a href="#" class="text-decoration-none text-dark">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="hero-container p-4">
+      <img
+        src="https://static.wixstatic.com/media/ea71bb_04fa8a795ad24075b39c085d743035a2~mv2_d_6284_1717_s_2.jpg/v1/fill/w_1745,h_655,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_04fa8a795ad24075b39c085d743035a2~mv2_d_6284_1717_s_2.jpg"
+        alt="Yellow Sofa"
+        class="hero-image"
+      />
+      <div class="hero-text">
+        A SOFA,<br />
+        A GOOD<br />
+        BOOK,<br />
+        AND YOU.
+      </div>
+    </div>
+
+    <div class="bestseller-heading">
+      <span
+        class="mt-2"
+        style="color: #0a2342; font-family: 'Times New Roman', Times, serif"
+        >BESTSELLERS</span
+      >
+    </div>
+    <div class="hero-container p-4 pt-0">
+      <div class="box">
+        <div class="d-flex flex-wrap justify-content-center gap-5 p-4">
+          <div class="card" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_17c5485b41484f82b42aaa8a17474342~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_220,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_17c5485b41484f82b42aaa8a17474342~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$30.00</p>
+            </div>
+          </div>
+          <div class="card" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_e32bedf7bba24af49bc918269b116f0c~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_625,h_626,al_c,q_85,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_e32bedf7bba24af49bc918269b116f0c~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$25.00</p>
+            </div>
+          </div>
+          <div class="card" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_0f554db9ccd946dfb1f67dad05d6a2ba~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_220,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_0f554db9ccd946dfb1f67dad05d6a2ba~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$22.75</p>
+            </div>
+          </div>
+          <div class="card" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_a6bf1af7d6a44ed9a15cce8fec7c46b6~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_220,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_a6bf1af7d6a44ed9a15cce8fec7c46b6~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$18.30</p>
+            </div>
+          </div>
+          <div class="card" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_88f750dd06704bee9c4bed3acebaec54~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_220,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_88f750dd06704bee9c4bed3acebaec54~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$12.00</p>
+            </div>
+          </div>
+          <div class="card" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_30bb0bbedfa6425380becfdccd67d02b~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_220,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_30bb0bbedfa6425380becfdccd67d02b~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$50.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 text-center mt-5">
+          <span
+            class="fs-4 fw-semibold"
+            style="color: #ffffff; font-family: 'Times New Roman', Times, serif"
+          >
+            --This month's--
+          </span>
+        </div>
+        <div class="w-100 text-center mt-2">
+          <span
+            class="fs-1 fw-bold"
+            style="color: #ffffff; font-family: 'Times New Roman', Times, serif"
+          >
+            RECOMMENDED BOOKS
+          </span>
+        </div>
+        <!-- <div class="w-100 text-center mt-0.1">
+        
+          <span
+            class="fs-1 fw-light"
+            style="color: #ffffff; font-family: 'Times New Roman', Times, serif"
+          >
+            ________
+          </span>
+        </div> -->
+        <div class="d-flex flex-wrap justify-content-center gap-5 p-4">
+          <div class="card mt-4" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_a4061457e95b47b295a9533f89839dc4~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_220,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_a4061457e95b47b295a9533f89839dc4~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$30.00</p>
+            </div>
+          </div>
+          <div class="card mt-4" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_a48625ef802d4bdcb90f1f9e672117ef~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_220,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_a48625ef802d4bdcb90f1f9e672117ef~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$30.00</p>
+            </div>
+          </div>
+          <div class="card mt-4" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_020b6f808ac64fc7a288ea5d01a8c714~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_220,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_020b6f808ac64fc7a288ea5d01a8c714~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$30.00</p>
+            </div>
+          </div>
+          <div class="card mt-4" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_1c8d1b6ba0fd49838a1de426c1464053~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_220,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_1c8d1b6ba0fd49838a1de426c1464053~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$30.00</p>
+            </div>
+          </div>
+          <div class="card mt-4" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_2f6dec967d9a4bbeb8864da9a3e91752~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_220,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_2f6dec967d9a4bbeb8864da9a3e91752~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$30.00</p>
+            </div>
+          </div>
+          <div class="card mt-4" style="width: 10rem; height: 12rem">
+            <img
+              src="https://static.wixstatic.com/media/ea71bb_5b55ec2330ee4f1588ffda1918ee708c~mv2_d_2479_2483_s_4_2.jpg/v1/fill/w_220,h_220,al_c,q_80,usm_0.66_1.00_0.01,enc_avif,quality_auto/ea71bb_5b55ec2330ee4f1588ffda1918ee708c~mv2_d_2479_2483_s_4_2.jpg"
+              alt=""
+              style="height: 80%; width: 100%; object-fit: cover"
+            />
+            <div
+              class="card-text d-flex justify-content-center align-items-center"
+              style="height: 20%"
+            >
+              <p class="fw-bold fs-6 m-0">$30.00</p>
+            </div>
+          </div>
+        </div>
+        <div class="w-100 text-center mt-5">
+          <span
+            class="fs-3 fw-semibold"
+            style="color: #ffffff; font-family: 'Times New Roman', Times, serif"
+          >
+            THERE'S NO SUCH THING AS TOO MANY BOOKS
+          </span>
+        </div>
+      </div>
+    </div>
+    <div class="box2">
+      <div class="w-100 text-center mt-3">
+        <span
+          class="fs-4 fw-semibold"
+          style="color: #0a2342; font-family: 'Times New Roman', Times, serif"
+        >
+          Coming up
+        </span>
+      </div>
+      <div class="w-100 text-center mt-2">
+        <span
+          class="fs-1 fw-bold"
+          style="color: #0a2342; font-family: 'Times New Roman', Times, serif"
+        >
+          BOOK LAUNCH
+        </span>
+      </div>
+      <div class="d-flex justify-content-center p-3">
+        <div
+          class="card cardimg"
+          style="
+            width: 90%;
+            max-width: 500px;
+            height: auto;
+            min-height: 400px;
+            max-height: 600px;
+          "
+        >
+          <img
+            src="https://static.wixstatic.com/media/84770f_4e2e982bd3eb41d3a961d820003a9a56~mv2.webp/v1/fill/w_602,h_779,al_c,lg_1,q_85,enc_auto/84770f_4e2e982bd3eb41d3a961d820003a9a56~mv2.webp"
+            alt=""
+            style="height: 100%; width: 100%; object-fit: cover"
+          />
+        </div>
+      </div>
+    </div>
+
+    <footer
+      class="text-light py-5"
+      style="background-color: #002f5f; margin-top: 65px"
+    >
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Contact Info -->
+          <div class="col-md-3 mb-4">
+            <h4 class="fw-bold mb-3 text-white">
+              <span style="color: #ff6b6b">&#8764;</span> FAMOUS. PUBLISHERS
+            </h4>
+            <p class="mb-1 text-secondary">76548-65117</p>
+            <p class="mb-1 text-secondary">javedalam1731@gmail.com</p>
+            <p class="mb-1 text-secondary">Vadodara, Gujarat</p>
+            <p class="text-secondary">India</p>
+          </div>
+
+          <!-- Links -->
+          <div class="col-md-2 mb-4">
+            <h6 class="text-uppercase text-white mb-3">Links</h6>
+            <ul class="list-unstyled text-secondary">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Solutions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Vision</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Programs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">Blog</a>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-danger mt-2 rounded">Get Started</a>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase text-white mb-3">
+              Subscribe to Our Newsletter
+            </h6>
+            <!-- <form>
+              <div class="mb-2">
+                <label for="newsletter-email" class="form-label">Email *</label>
+                <input
+                  type="email"
+                  class="form-control"
+                  id="newsletter-email"
+                  placeholder="Enter your email"
+                  required
+                />
+              </div>
+              <div class="form-check mb-2">
+                <input
+                  class="form-check-input"
+                  type="checkbox"
+                  id="subscribe-check"
+                />
+                <label class="form-check-label" for="subscribe-check">
+                  Yes, subscribe me to your newsletter. *
+                </label>
+              </div>
+              <button type="submit" class="btn btn-outline-light">
+                Submit
+              </button>
+            </form> -->
+          </div>
+
+          <!-- Social + Copyright -->
+          <div class="col-md-3 text-md-end">
+            <h6 class="text-uppercase text-white mb-3">Follow Us On:</h6>
+            <div class="d-flex justify-content-md-end gap-3 mb-3">
+              <a
+                href="https://www.linkedin.com/in/md-javed-171508aug/"
+                class="text-light fs-5"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="#" class="text-light fs-5"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/_mrfamous_09/"
+                class="text-light fs-5"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+            <p class="small text-secondary mb-0">
+              ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              by Famous Publishers<br />
+              Powered and secured by
+              <a href="#" class="text-decoration-none text-light"
+                >localhost:1715</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- Icons -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
+    <!-- <link rel="stylesheet" href="s.css"> -->
+
+    <style>
+      body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container-book {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 30px;
+}
+
+.book-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.book-header img {
+  width: 220px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+  flex: 1;
+  min-width: 250px;
+  text-align: left;   /* 👈 Ye sabse important line */
+}
+
+.book-info h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #2c3e50;
+  text-align: center;   /* 👈 Title bhi left me aayega */
+}
+
+.book-info h4 {
+  margin-top: 5px;
+  color: #555;
+  font-weight: 500;
+  text-align: left;   /* 👈 Subtitle bhi left aligned */
+}
+
+.book-meta {
+  margin-top: 15px;
+  text-align: left;
+}
+
+.book-meta p {
+  margin: 6px 0;
+  font-size: 15px;
+  line-height: 1.5;
+}
+
+.book-desc {
+  margin-top: 25px;
+  line-height: 1.6;
+  text-align: left;   /* 👈 Description bhi left aligned */
+}
+
+.links {
+  margin-top: 25px;
+  text-align: left;   /* 👈 Buttons bhi left side pe */
+}
+
+
+.links a {
+  display: inline-block;
+  margin-right: 10px;
+  background: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .book-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-info {
+    text-align: center;
+  }
+
+  .book-info h2 {
+    font-size: 24px;
+  }
+}
+
+    </style>
+
+
+
+  </head>
+  <body style="font-family: Arial; text-align: center">
+    <header class="navbar navbar-expand-lg bg-light p-3">
+      <div
+        class="container-fluid d-flex justify-content-between align-items-center"
+      >
+        <!-- Left: Logo (unchanged) -->
+        <div
+          class="logo"
+          style="
+            display: inline-flex;
+            align-items: center;
+            border: 1.5px solid #0c2d48;
+            overflow: hidden;
+            border-radius: 2px;
+          "
+        >
+          <span
+            style="
+              background-color: #0c2d48;
+              color: #fff;
+              font-weight: 700;
+              padding: 8px 12px;
+              font-size: 20px;
+              letter-spacing: 1px;
+            "
+            class="brand fw-bold"
+            >FAMOUS.</span
+          >
+          <span
+            style="
+              background-color: #fff;
+              color: #0c2d48;
+              font-size: 20px;
+              font-weight: 500;
+              padding: 8px 14px;
+              letter-spacing: 1px;
+            "
+            class="tag text-muted"
+            >Publishers</span
+          >
+        </div>
+
+        <!-- Toggle button for mobile -->
+        <button
+          class="navbar-toggler d-lg-none"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarContent"
+          aria-controls="navbarContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Center: Search bar and Right: Links (collapsible) -->
+        <div class="collapse navbar-collapse" id="navbarContent">
+          <div class="d-flex w-100 justify-content-between align-items-center">
+            <!-- Center: Search bar -->
+            <div class="mx-auto">
+              <form class="d-flex" role="search" method="get" action="/result">
+                <input
+                  class="form-control me-2 search-input"
+                  type="search"
+                  name="query"
+                  placeholder="Search"
+                  aria-label="Search"
+                  style="
+                    width: 350px;
+                    border-radius: 50px 0 0 50px;
+                    padding: 10px 20px;
+                    border: 1px solid #ccc;
+                    outline: none;
+                    transition: 0.3s;
+                    border-color: #007bff; /* 👈 Focus effect */
+                    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+                  "
+                />
+                <button
+                  style="
+                    border-radius: 0 50px 50px 0;
+                    background-color: #103051;
+                    color: white;
+                    border: none;
+                    padding: 10px 25px;
+                    transition: 0.3s;
+                    background-color: #1d3e61;
+                  "
+                  class="btn search-btn"
+                  type="submit"
+                >
+                  Search
+                </button>
+              </form>
+            </div>
+
+            <!-- Right: Links -->
+            <nav class="d-flex align-items-center gap-3">
+              <a href="#" class="text-decoration-none text-dark">About</a>
+              <a href="#" class="text-decoration-none text-dark">Contact</a>
+            </nav>
+          </div>
+        </div>
+      </div>
+    </header>
+
+      <div class="container-book">
+    <div class="book-header">
+      <img src="<%= selectedBook.volumeInfo.imageLinks?.thumbnail || '/images/no-cover.png' %>"
+           alt="<%= selectedBook.volumeInfo.title %> cover">
+
+      <div class="book-info">
+        <h2><%= selectedBook.volumeInfo.title %></h2>
+
+        <% if (selectedBook.volumeInfo.subtitle) { %>
+          <h4><%= selectedBook.volumeInfo.subtitle %></h4>
+        <% } %>
+
+        <div class="book-meta">
+          <p><strong>Author:</strong> <%= selectedBook.volumeInfo.authors?.join(", ") || "Unknown" %></p>
+          <p><strong>Publisher:</strong> <%= selectedBook.volumeInfo.publisher || "N/A" %></p>
+          <p><strong>Published:</strong> <%= selectedBook.volumeInfo.publishedDate || "N/A" %></p>
+          <p><strong>Pages:</strong> <%= selectedBook.volumeInfo.pageCount || "N/A" %></p>
+          <p><strong>Category:</strong> <%= selectedBook.volumeInfo.categories?.join(", ") || "N/A" %></p>
+          <p><strong>Rating:</strong> ⭐ <%= selectedBook.volumeInfo.averageRating || "—" %>
+             (<%= selectedBook.volumeInfo.ratingsCount || 0 %> reviews)</p>
+          <p><strong>Language:</strong> <%= selectedBook.volumeInfo.language?.toUpperCase() || "N/A" %></p>
+        </div>
+      </div>
+    </div>
+
+    <div class="book-desc">
+      <h3>About this book</h3>
+      <p><%= selectedBook.volumeInfo.description || "No description available." %></p>
+    </div>
+
+    <div class="links">
+      <% if (selectedBook.volumeInfo.previewLink) { %>
+        <a href="<%= selectedBook.volumeInfo.previewLink %>" target="_blank">📖 Preview</a>
+      <% } %>
+      <% if (selectedBook.volumeInfo.infoLink) { %>
+        <a href="<%= selectedBook.volumeInfo.infoLink %>" target="_blank">🔗 More Info</a>
+      <% } %>
+    </div>
+  </div>
+
+
+    <footer
+      class="text-light py-5"
+      style="background-color: #002f5f; margin-top: 65px"
+    >
+      <div class="container">
+        <div class="row">
+          <!-- Logo and Contact Info -->
+          <div class="col-md-3 mb-4">
+            <h4 class="fw-bold mb-3 text-white">
+              <span style="color: #ff6b6b">&#8764;</span> FAMOUS. PUBLISHERS
+            </h4>
+            <p class="mb-1 text-secondary">76548-65117</p>
+            <p class="mb-1 text-secondary">javedalam1731@gmail.com</p>
+            <p class="mb-1 text-secondary">Vadodara, Gujarat</p>
+            <p class="text-secondary">India</p>
+          </div>
+
+          <!-- Links -->
+          <div class="col-md-2 mb-4">
+            <h6 class="text-uppercase text-white mb-3">Links</h6>
+            <ul class="list-unstyled text-secondary">
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Solutions</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Vision</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary"
+                  >Programs</a
+                >
+              </li>
+              <li>
+                <a href="#" class="text-decoration-none text-secondary">Blog</a>
+              </li>
+            </ul>
+            <a href="#" class="btn btn-danger mt-2 rounded">Get Started</a>
+          </div>
+
+          <!-- Newsletter -->
+          <div class="col-md-4 mb-4">
+            <h6 class="text-uppercase text-white mb-3">
+              Subscribe to Our Newsletter
+            </h6>
+
+          </div>
+
+          <!-- Social + Copyright -->
+          <div class="col-md-3 text-md-end">
+            <h6 class="text-uppercase text-white mb-3">Follow Us On:</h6>
+            <div class="d-flex justify-content-md-end gap-3 mb-3">
+              <a
+                href="https://www.linkedin.com/in/md-javed-171508aug/"
+                class="text-light fs-5"
+                ><i class="bi bi-linkedin"></i
+              ></a>
+              <a href="#" class="text-light fs-5"
+                ><i class="bi bi-facebook"></i
+              ></a>
+              <a
+                href="https://www.instagram.com/_mrfamous_09/"
+                class="text-light fs-5"
+                ><i class="bi bi-instagram"></i
+              ></a>
+            </div>
+            <p class="small text-secondary mb-0">
+              ©
+              <script>
+                document.write(new Date().getFullYear());
+              </script>
+              by Famous Publishers<br />
+              Powered and secured by
+              <a href="#" class="text-decoration-none text-light"
+                >localhost:1715</a
+              >
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>

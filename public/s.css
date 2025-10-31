@@ -1,0 +1,97 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: #f4f4f9;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+.container {
+  max-width: 900px;
+  margin: 40px auto;
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 30px;
+}
+
+.book-header {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  align-items: flex-start;
+}
+
+.book-header img {
+  width: 220px;
+  height: auto;
+  border-radius: 6px;
+  object-fit: cover;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.book-info {
+  flex: 1;
+  min-width: 250px;
+}
+
+.book-info h2 {
+  margin: 0;
+  font-size: 28px;
+  color: #2c3e50;
+}
+
+.book-info h4 {
+  margin-top: 5px;
+  color: #555;
+  font-weight: 500;
+}
+
+.book-meta p {
+  margin: 6px 0;
+  font-size: 15px;
+}
+
+.book-meta strong {
+  color: #111;
+}
+
+.book-desc {
+  margin-top: 25px;
+  line-height: 1.6;
+}
+
+.links {
+  margin-top: 25px;
+}
+
+.links a {
+  display: inline-block;
+  margin-right: 10px;
+  background: #007bff;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 5px;
+  text-decoration: none;
+  transition: background 0.3s;
+}
+
+.links a:hover {
+  background: #0056b3;
+}
+
+@media (max-width: 600px) {
+  .book-header {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .book-info {
+    text-align: center;
+  }
+
+  .book-info h2 {
+    font-size: 24px;
+  }
+}

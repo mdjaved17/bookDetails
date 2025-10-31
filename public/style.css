@@ -1,0 +1,258 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background-color: #ffffff;
+}
+
+/* Navbar Container */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 60px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+
+/* Logo Section */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.navbar {
+  padding: 20px 60px;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+  border-bottom: 1px solid #eee;
+}
+
+/* MERGED LOGO BOX */
+.logo {
+  display: inline-flex;
+  align-items: center;
+  border: 1.5px solid #0c2d48;
+  overflow: hidden;
+  border-radius: 2px;
+}
+
+/* Left Part (FAMOUS.) */
+.logo .brand {
+  background-color: #0c2d48;
+  color: #fff;
+  font-weight: 700;
+  padding: 8px 12px;
+  font-size: 20px;
+  letter-spacing: 1px;
+}
+
+/* Right Part (Store) */
+.logo .tag {
+  background-color: #fff;
+  color: #0c2d48;
+  font-size: 20px;
+  font-weight: 500;
+  padding: 8px 14px;
+  letter-spacing: 1px;
+}
+
+/* Nav Links */
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #0c2d48;
+  font-weight: 500;
+  font-size: 15px;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: #577590;
+}
+
+/* Login and Cart */
+.login i {
+  margin-right: 6px;
+}
+
+.cart {
+  position: relative;
+}
+
+.cart-count {
+  position: absolute;
+  top: -8px;
+  right: -10px;
+  background-color: #0c2d48;
+  color: #fff;
+  border-radius: 50%;
+  padding: 1px 5px;
+  font-size: 11px;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px 20px;
+  }
+
+  .nav-links {
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+  }
+}
+
+
+
+ .search-form {
+    align-items: center;
+  }
+
+  /* Input modification */
+  .search-input {
+    width: 350px;               /* 👈 Thoda wide input */
+    border-radius: 50px 0 0 50px; /* 👈 Left side round */
+    padding: 10px 20px;
+    border: 1px solid #ccc;
+    outline: none;
+    transition: 0.3s;
+  }
+
+  .search-input:focus {
+    border-color: #007bff; /* 👈 Focus effect */
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.4);
+  }
+
+  /* Button modification */
+  .search-btn {
+    border-radius: 0 50px 50px 0; /* 👈 Right side round (oval style) */
+    background-color: #103051;   /* 👈 Success green color */
+    color: white;
+    border: none;
+    padding: 10px 25px;
+    transition: 0.3s;
+  }
+
+  .search-btn:hover {
+    background-color: #1d3e61; /* 👈 Darker hover */
+  }
+
+      .hero-container {
+      position: relative;
+      display: inline-block;
+      width: 100%;
+    }
+
+    .hero-image {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .hero-text {
+      position: absolute;
+      top: 15%;
+      left: 5%;
+      color: #0A2342; /* Dark navy blue */
+      font-family: Georgia, serif;
+      font-weight: bold;
+      font-size: 5vw;
+      line-height: 0.7;
+      white-space: pre-line;
+    }
+
+    @media (max-width: 768px) {
+      .hero-text {
+        font-size: 5vw;
+      }
+    }
+
+/* In your CSS file */
+.bestseller-heading {
+  line-height: normal;
+  text-align: center;
+  font-size: 47px;
+  color: #002f5f;
+ 
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.box{
+  background-color: #0A2342;
+  
+  width:100%;
+}
+
+.card{
+  border:2px solid black;
+  height:150px;
+  width: 130px;
+  gap: 15px
+}
+
+
+.month-books {
+  line-height: normal;
+  text-align: center;
+  font-size: 7px;
+  color: #002f5f;
+ 
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.box2{
+  background-color: #ffffff;
+  height: 800px;
+  width:100%;
+}
+
+.book-card {
+  width: 16rem;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25);
+}
+
+
+  .book-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.2);
+  }
+
+  .book-img-wrapper {
+    height: 240px;
+    /* background-color: #137ce6; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .book-img-wrapper img {
+    max-height: 100%;
+    max-width: 100%;
+    object-fit: contain;
+    padding: 8px;
+    transition: transform 0.3s ease;
+  }
+
+  .book-card:hover img {
+    transform: scale(1.03);
+  }
